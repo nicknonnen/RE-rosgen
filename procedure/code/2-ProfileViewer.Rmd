@@ -24,8 +24,9 @@ require(dplyr) #This package allows users to run sequential commands to manipula
 ```{r}
 # The purpose of this chunk is to load the necessary data, and is designed to input text files created by the r.profile tool in GRASS
 CrossProf <- read.csv("../../data/derived/public/crossprof.txt", header=FALSE, sep = " ", col.names=c("Junk","Distance","Elevation"))[c(2,3)]
-LongProf <- read.csv("../../data/derived/public/longprof.txt", header=FALSE, sep = " ", col.names=c("Junk","Distance","Elevation"))[c(2,3)]
+LongProf_Derived <- read.csv("../../data/derived/public/longprof_derived.txt", header=FALSE, sep = " ", col.names=c("Junk","Distance","Elevation"))[c(2,3)]
 ```
+
 
 ```{r}
 # The purpose of this chunk is to visualize our datasets using the ggplot2 package.This chunk is set up so that your variables do not need to be specified and the chunk can just be run.
@@ -43,6 +44,7 @@ ggplot(CrossProf) +
        labs(x = "Distance along the transect (m)", y = "Elevation (masl)", title = "Cross-Sectional Profile of Valley Near CHaMP Point")
 ```
 
+
 ```{r}
 #run this codeblock if the Cross-sectional profile looked backwards, then rerun the graphing codeblock above
 maxd <- max(CrossProf$Distance, na.rm=TRUE) #finds maximum distance
@@ -50,11 +52,13 @@ CrossProf$Distance <- maxd-CrossProf$Distance  #inverts distance axis by subtrac
 
 ```
 
+
 ```{r}
 #run this codeblock if the Longitudinal profile looked backwards, then rerun the graphing codeblock above
 maxd <- max(LongProf$Distance, na.rm=TRUE) #finds maximum distance
 LongProf$Distance <- maxd-LongProf$Distance  #inverts distance axis by subtracting distances from max
 ```
+
 
 ```{r}
 # The purpose of this chunk is to compute the slope of the longitudinal profile (between points) and the average slope 
@@ -76,6 +80,7 @@ ggplot(LongProf) +
        labs(x = "Distance along the transect (m)", y = "Elevation (masl)", title = "Longitudinal Profile of Extracted Reach")
 ```
 
+
 ```{r}
 #The purpose of this chunk is to process our data for entry into the Rosgen Stream Classification scheme. This chunk can be run now, or it can be run during the Classification handout. The chunk reports the mean slope and gives you the necessary tools to determine the flood-prone area of the stream to calculate the entrenchment ratio.
 LongProf %>%
@@ -83,7 +88,7 @@ LongProf %>%
   summarize(Slope = mean(Slope, na.rm = TRUE)) #This calculates the mean slope, based on the Attempt.
 
 # Now we want to figure out the width of the flood-prone area.
-DpthBf_Max <- 8 # Insert the maximum bankfull depth from your point/reach of interest here, replacing the 8 left of the hash #
+DpthBf_Max <- 1.5793 # Insert the maximum bankfull depth from your point/reach of interest here, replacing the 8 left of the hash #
 
 CrossProf[which.min(CrossProf$Elevation),] # This finds the minimum elevation, which should correspond to the lowest elevation in the stream channel, and reports the entire row. That part is essential! Double check the reported value with one of the plots you have made before to verify.
 StreamElev <- min(CrossProf$Elevation) # This stores the minimum elevation that you found in the previous step.
