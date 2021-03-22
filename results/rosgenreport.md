@@ -17,7 +17,7 @@ Nick Nonnenmacher, Zach Hilgendorf, Joseph Holler, and Peter Kedron.
 
 Replication Materials Available at: [github repository name](github repository link)
 
-Created: `03 March 2021`
+Created: `21 March 2021`
 Revised: `DD Month YYYY`
 
 ## Abstract
