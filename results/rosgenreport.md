@@ -130,28 +130,28 @@ Tables to Include:
 Table 1. Site Measurements
 | Variable | Value | Source |
 | :-: | :-: | :-: |
-| Bankfull Width | | |
-| Bankfull Avg Depth | 0.2381 | CHaMPS Data |
+| Bankfull Avg Width | 4.637 | CHaMPS Data |
+| Bankfull Avg Depth | 0.238 | CHaMPS Data |
 | Bankfull Max Depth | 0.627 | CHaMPS Data |
-| Valley Width | | |
-| Valley Depth | | |
-| Stream/River Length | 208.992804 | CHaMPS Data |
-| Valley Length | 197.032907 | CHaMPS Data |
+| Valley Width | 85 | Terrain Cross-Section |
+| Valley Depth | 3 | Terrain Cross-Section |
+| Stream/River Length | 208.993 | CHaMPS Data |
+| Valley Length | 197.033 | CHaMPS Data |
 | Median Channel Material Particle Diameter | 59 | CHaMPS Data |
 
 Table 2. Rosgen Level I Classification
 | Criteria | Value |
 | :-: | :-: |
-| Entrenchment Ratio | -- |
-| Width / Depth Ratio | -- |
-| Sinuosity | 1.0607 |
-| Level I Stream Type | -- |
+| Entrenchment Ratio | 18.331 |
+| Width / Depth Ratio | 19.476 |
+| Sinuosity | 1.061 |
+| Level I Stream Type | C |
 
 Table 3. Rosgen Level II Classification
 | Criteria | Value |
 | :-: | :-: |
-| Slope | -- |
-| Channel Material | -- |
+| Slope | 3.938 |
+| Channel Material | Gravel |
 | Level II Stream Type | -- |
 
 
