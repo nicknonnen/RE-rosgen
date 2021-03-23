@@ -127,25 +127,24 @@ Figures to Include:
 
 Tables to Include:
 
-*pull some of this data straight from CHaMPS?*
-
 Table 1. Site Measurements
 | Variable | Value | Source |
 | :-: | :-: | :-: |
 | Bankfull Width | | |
-| Bankfull Depth | | |
+| Bankfull Avg Depth | 0.2381 | CHaMPS Data |
+| Bankfull Max Depth | 0.627 | CHaMPS Data |
 | Valley Width | | |
 | Valley Depth | | |
-| Stream/River Length | | |
-| Valley Length | | |
-| Median Channel Material Particle Diameter | | |
+| Stream/River Length | 208.992804 | CHaMPS Data |
+| Valley Length | 197.032907 | CHaMPS Data |
+| Median Channel Material Particle Diameter | 59 | CHaMPS Data |
 
 Table 2. Rosgen Level I Classification
 | Criteria | Value |
 | :-: | :-: |
 | Entrenchment Ratio | -- |
 | Width / Depth Ratio | -- |
-| Sinuosity | -- |
+| Sinuosity | 1.0607 |
 | Level I Stream Type | -- |
 
 Table 3. Rosgen Level II Classification
