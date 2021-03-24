@@ -24,6 +24,9 @@ Revised: `DD Month YYYY`
 
 Briefly describe the original analysis – type of study, research design, analytical approach, and results; motivation of the replication; and outline of the replication study
 
+Understanding river and stream dynamics is the first step to accurately classifying and ...
+(include brief description of the project, why Rosgen did this, why Kasprak replicated, and why I am replicating)
+
 ## Original Study Information
 
 Description: Present a short narrative that summarizes key information about the original study. Include information about all of the following
