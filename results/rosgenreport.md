@@ -143,16 +143,16 @@ Table 2. Rosgen Level I Classification
 | Criteria | Value |
 | :-: | :-: |
 | Entrenchment Ratio | 18.331 |
-| Width / Depth Ratio | 19.476 |
+| Width / Depth Ratio | 19.483 |
 | Sinuosity | 1.061 |
 | Level I Stream Type | C |
 
 Table 3. Rosgen Level II Classification
 | Criteria | Value |
 | :-: | :-: |
-| Slope | 3.938 |
+| Slope | 0.0167 |
 | Channel Material | Gravel |
-| Level II Stream Type | -- |
+| Level II Stream Type | C4 |
 
 
 ## Unplanned Deviations from the Protocol
