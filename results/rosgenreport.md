@@ -31,15 +31,6 @@ This report stems from the original 1994 study ***A classification of natural ri
 This study is a replication of Kasprack's analysis, with the goal of reproducing results using Rosgen's classification scheme, open-source GIS software, and the same data sets, to test to what extent such a river classification study is possible without any field aspect, and without oversimplifying our conclusions.
 
 
-## Original Study Information
-
-Description: Present a short narrative that summarizes key information about the original study. Include information about all of the following
-1.	Provide a written description of the study location and extent. Whenever possible, provide specific geographic coordinates bounding the study extent or a spatial reference file.
-2.	Identify and describe the spatial support (spatial resolution, unit of analysis) of the original analysis was conducted
-3.	What type of sample/data did the original study use?
-4.	Are the data and code used in the original analysis available/used in this replication?
-
-
 ### Sampling Plan and Data Description
 
 Include a reference map of the stream reach point you will analyze.
@@ -63,7 +54,7 @@ Describe the data used in the original study. If sampling was used, provide deta
    -	Describe any sample weighting that was used in the original study. Separately identify any spatial component used in the weighting scheme.
 
 
-## Materials and Procedure
+## Procedure and Data
 
 Describe how the replication study will be implemented and identify any materials and procedures used to complete the replication.
 1.	For computational studies include information about the hardware and software environments of both the original study and the replication attempt.
@@ -79,6 +70,21 @@ Differences from the Original Study: Identify any ways in which the replication 
 Assessment Criteria: Identify the criteria that will define whether the replication attempt was successful (e.g., matched statistical significance, direction of effect, similar magnitude of effect)
 - Reproducible documentation of methods, where documentation includes:
 - Annotated flowchart of final parameter values (use last page of RSC_EPA_2005 PDF)
+
+#### Procedure
+The purpose of this study was to replicate Kaspack's analysis to determine if the methodology was reproducible and viable. Therefore, the procedure for this project follows exactly or very closely that of Kasprack's, and focuses on study sites within the John Day Watershed. This replication effort was distributed across all students in Joe Holler's spring 2021 GEOG 323 Open Source GIScience, and the analysis in this document focuses specifically on study site 25.
+
+All procedures, code, and material for this study can be found [here](https://github.com/nicknonnen/RE-rosgen), in my individual RE-Rosgen respository.
+
+Detailed procedures for the GRASS analysis may be found [here]().
+Code for R Studio analysis may be found [here](), with instructions [here]().
+
+GRASS plugins used include
+
+#### Data
+>> CHamPS (Columbia Habitat Monitoring Program) [data]()
+>> John Day Watershed Digital Elevation Model [data]()
+
 
 ## Replication Results
 
@@ -130,7 +136,7 @@ Table 3. Rosgen Level II Classification
 
 ## Unplanned Deviations from the Protocol
 
-In order to initially install the required add-ons in GRASS on MacOS, XCode Command Line Tools had to be installed from the Apple Developers Library. More information on this issue and how to overcome may be found [here](https://github.com/GIS4DEV/RE-rosgen/issues/2).
+In order to initially install the required add-ons in GRASS on MacOS, XCode Command Line Tools had to be installed from the Apple Developers Library. More information on this issue and how to overcome may be found [here](https://github.com/GIS4DEV/RE-rosgen/issues/2). In addition, in order to open certain data it was necessary to install [The Unarchiver application](https://theunarchiver.com). 
 
 ## Discussion
 
