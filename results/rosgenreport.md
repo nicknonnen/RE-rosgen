@@ -18,9 +18,9 @@ Nick Nonnenmacher, Zach Hilgendorf, Joseph Holler, and Peter Kedron.
 Replication Materials Available at: [github repository name](github repository link)
 
 Created: `21 March 2021`
-Revised: `DD Month YYYY`
+Revised: `25 March 2021`
 
-## Abstract
+## Introduction and Motivation
 
 Briefly describe the original analysis – type of study, research design, analytical approach, and results; motivation of the replication; and outline of the replication study
 
@@ -35,9 +35,6 @@ Description: Present a short narrative that summarizes key information about the
 3.	What type of sample/data did the original study use?
 4.	Are the data and code used in the original analysis available/used in this replication?
 
-## Analytical Plan
-
-Describe all elements of the analytical plan of the original study that are relevant to the research questions and hypotheses being re-examined by the replication. Include information for each of the following sub-sections as appropriate.
 
 ### Sampling Plan and Data Description
 
@@ -61,37 +58,6 @@ Describe the data used in the original study. If sampling was used, provide deta
    -	Explain how the original authors addressed missing data and details about any interpolation procedures used by the authors.
    -	Describe any sample weighting that was used in the original study. Separately identify any spatial component used in the weighting scheme.
 
-### Variables
-
-Describe the variables used in the original study to address the research questions and hypotheses that are the focus of the replication.
-
-1. Identify any experimentally manipulated variables and include details about how these variables were manipulated during the original study.
-2. Identify any measured variables examined in the original study
-   -	Identify both the response(s) and predictor variable(s) associated with each hypothesis
-   -	Describe any variable transformations (e.g., log-scaled, categorical)
-   -	Describe any spatial aggregation/disaggregation that was applied to any variables
-3. Describe any adjustments made to the variables to account for
-   -	first-order spatial effects (sub-regional differences in means)
-   -	second-order spatial effects (spatial dependencies)
-   -	spatial anisotropies (directional trends)
-
-### Analytical Specification
-
-Describe the exact analytical specification that was used to test each hypothesis
-1. For computational studies include information about the hardware and software environments of both the original study
-2. Identify the coordinate system(s) and projection(s) used during the original analysis
-3. Specify if/how edge effects were addressed. Provide details regarding the extent of any buffer or guard areas used.
-4. Describe the type of model, the specification of that model, distributional assumptions of the model, and any post-hoc analyses used to test each hypothesis. Key aspects of some common geographical analyses include:
-   - If a spatial weighting scheme was used, provide a functional description of that scheme
-   - If a spatial model was used, provide detailed description of that model
-   - If a classifier was used, provide details about the selection of training data, validation data, and if any independent test data
-   - If a spatial multi-level model was used, identify the spatial scale of each level, the variable included at each level, and the levels any spatial structures or cross-scale structure are estimated at.
-Inference Criteria, Results, and Robustness: For each separate hypothesis, provide a description of the results of the original study and the relevant inference criteria and robustness checks
-1. Describe the specific criteria (e.g., p-values, effect size, model fit) and thresholds that were used to make inferences.
-   -	Identify any adjustments made for multiple testing (e.g., Bonferroni, Sidak) and how they were implemented.
-2. Describe the result associated with each hypothesis.
-   -	Identify the size and direction of the effect, measure of variance of the effect, statistical assessments
-3. Describe any robustness checks that were completed to assess the strength and reliability of inferences for each hypothesis. Identify any spatial components varied during robustness checks.
 
 ## Materials and Procedure
 
@@ -182,6 +148,10 @@ Do the research findings suggest a need for any future research?
 ## References
 
 Include any referenced studies or materials in the [AAG Style of author-date referencing](https://www.tandf.co.uk//journals/authors/style/reference/tf_USChicagoB.pdf).
+
+Kasprak, A., N. Hough-Snee, T. Beechie, N. Bouwes, G. Brierley, R. Camp, K. Fryirs, H. Imaki, M. Jensen, G. O’Brien, D. Rosgen, and J. Wheaton. 2016. The blurred line between form and process: A comparison of stream channel classification frameworks ed. J. A. Jones. PLOS ONE 11 (3):e0150293. https://dx.plos.org/10.1371/journal.pone.0150293.
+
+Rosgen, D. L. 1994. A classification of natural rivers. CATENA 22 (3):169–199. https://linkinghub.elsevier.com/retrieve/pii/0341816294900019.
 
 ####  Report Template References & License
 
