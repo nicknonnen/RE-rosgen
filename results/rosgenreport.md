@@ -24,8 +24,12 @@ Revised: `25 March 2021`
 
 Briefly describe the original analysis – type of study, research design, analytical approach, and results; motivation of the replication; and outline of the replication study
 
-Understanding river and stream dynamics is the first step to accurately classifying and ...
-(include brief description of the project, why Rosgen did this, why Kasprak replicated, and why I am replicating)
+Understanding river dynamics and morphology is crucial to further understanding how a system influences and interacts with surrounding environments. Through a classification system such as the Rosgen Classification of Natural Rivers, these dynamics can be better studied and researchers can more accurately and effectively predict, manage, and conserve environments within and adjacent to river systems.
+
+This report stems from the original 1994 study ***A classification of natural rivers*** by Rosgen, which established a classification hierarchy with 7 major categories from A to G. Rosgen's motivation for this system was to aid river restoration, engineering, and conservation, as well as help predict oft-erratic future behavior with higher accuracy. That study was then replicated by Kasprack et al in 2016, in the report ***The blurred line between form and process: A comparison of stream channel classification frameworks***. In this replication, Kasprack aimed to identify weaknesses in four different river classification models (Rosgen, the River Styles Framework, the Natural Channels Classification, and Channel-form Based Statistical Classifications) in the same place - the John Day Watershed in eastern Oregon. Kasprack concluded the four schemes were largely consistent.
+
+This study is a replication of Kasprack's analysis, with the goal of reproducing results using Rosgen's classification scheme, open-source GIS software, and the same data sets, to test to what extent such a river classification study is possible without any field aspect, and without oversimplifying our conclusions.
+
 
 ## Original Study Information
 
@@ -99,14 +103,14 @@ Tables to Include:
 Table 1. Site Measurements
 | Variable | Value | Source |
 | :-: | :-: | :-: |
-| Bankfull Avg Width | 4.637 | CHaMPS Data |
-| Bankfull Avg Depth | 0.238 | CHaMPS Data |
-| Bankfull Max Depth | 0.627 | CHaMPS Data |
-| Valley Width | 85 | Terrain Cross-Section |
+| Bankfull Avg Width | 4.637 | CHaMP Data |
+| Bankfull Avg Depth | 0.238 | CHaMP Data |
+| Bankfull Max Depth | 0.627 | CHaMP Data |
+| Valley Width | 85 | Terrain Cross-Section in R |
 | Valley Depth | 3 | Terrain Cross-Section |
-| Stream/River Length | 208.993 | CHaMPS Data |
-| Valley Length | 197.033 | CHaMPS Data |
-| Median Channel Material Particle Diameter | 59 | CHaMPS Data |
+| Stream/River Length | 208.993 | CHaMP Data |
+| Valley Length | 197.033 | CHaMP Data |
+| Median Channel Material Particle Diameter | 59 | CHaMP Data |
 
 Table 2. Rosgen Level I Classification
 | Criteria | Value |
@@ -126,7 +130,7 @@ Table 3. Rosgen Level II Classification
 
 ## Unplanned Deviations from the Protocol
 
-Identify and describe any unplanned deviations from the original replication protocol the occurred during the course of the replication. Explain the rationale behind any deviations. Finally, provide the details and results of any sensitivity analyses conducted to assess whether these deviations may have impacted the results of the replication.
+In order to initially install the required add-ons in GRASS on MacOS, XCode Command Line Tools had to be installed from the Apple Developers Library. More information on this issue and how to overcome may be found [here](https://github.com/GIS4DEV/RE-rosgen/issues/2).
 
 ## Discussion
 
@@ -147,11 +151,9 @@ Do the research findings suggest a need for any future research?
 
 ## References
 
-Include any referenced studies or materials in the [AAG Style of author-date referencing](https://www.tandf.co.uk//journals/authors/style/reference/tf_USChicagoB.pdf).
+Kasprak, A., N. Hough-Snee, T. Beechie, N. Bouwes, G. Brierley, R. Camp, K. Fryirs, H. Imaki, M. Jensen, G. O’Brien, D. Rosgen, and J. Wheaton. 2016. The blurred line between form and process: A comparison of stream channel classification frameworks ed. J. A. Jones. PLOS ONE 11 (3):e0150293. [https://dx.plos.org/10.1371/journal.pone.0150293](https://dx.plos.org/10.1371/journal.pone.0150293).
 
-Kasprak, A., N. Hough-Snee, T. Beechie, N. Bouwes, G. Brierley, R. Camp, K. Fryirs, H. Imaki, M. Jensen, G. O’Brien, D. Rosgen, and J. Wheaton. 2016. The blurred line between form and process: A comparison of stream channel classification frameworks ed. J. A. Jones. PLOS ONE 11 (3):e0150293. https://dx.plos.org/10.1371/journal.pone.0150293.
-
-Rosgen, D. L. 1994. A classification of natural rivers. CATENA 22 (3):169–199. https://linkinghub.elsevier.com/retrieve/pii/0341816294900019.
+Rosgen, D. L. 1994. A classification of natural rivers. CATENA 22 (3):169–199. [https://linkinghub.elsevier.com/retrieve/pii/0341816294900019](https://linkinghub.elsevier.com/retrieve/pii/0341816294900019).
 
 ####  Report Template References & License
 
