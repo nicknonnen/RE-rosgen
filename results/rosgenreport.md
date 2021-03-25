@@ -71,19 +71,24 @@ Assessment Criteria: Identify the criteria that will define whether the replicat
 - Reproducible documentation of methods, where documentation includes:
 - Annotated flowchart of final parameter values (use last page of RSC_EPA_2005 PDF)
 
-#### Procedure
-The purpose of this study was to replicate Kaspack's analysis to determine if the methodology was reproducible and viable. Therefore, the procedure for this project follows exactly or very closely that of Kasprack's, and focuses on study sites within the John Day Watershed. This replication effort was distributed across all students in Joe Holler's spring 2021 GEOG 323 Open Source GIScience, and the analysis in this document focuses specifically on study site 25.
+#### Data
+>> CHamPS (Columbia Habitat Monitoring Program) [data]()
+>> John Day Watershed Digital Elevation Model [data]()
 
-All procedures, code, and material for this study can be found [here](https://github.com/nicknonnen/RE-rosgen), in my individual RE-Rosgen respository.
+#### Procedure
+The purpose of this study was to replicate Kasprack's analysis to determine if the methodology was reproducible and viable. Therefore, the procedure for this project follows exactly or very closely that of Kasprack's, and focuses on study sites within the John Day Watershed. This replication effort was distributed across all students in Joe Holler's spring 2021 GEOG 323 Open Source GIScience, and the analysis in this document focuses specifically on study site 25 (loc_id = 25).
+
+All procedures, code, and material for this study can be found [here](https://github.com/nicknonnen/RE-rosgen), in my individual RE-Rosgen repository.
 
 Detailed procedures for the GRASS analysis may be found [here]().
 Code for R Studio analysis may be found [here](), with instructions [here]().
 
-GRASS plugins used include
+First, a GIS analysis of the data was conducted in GRASS. Models were used for [visualizing data]() in GRASS and [calculating centerlines]() of rivers at each study site, eliminating many steps present in the workflow directions.
 
-#### Data
->> CHamPS (Columbia Habitat Monitoring Program) [data]()
->> John Day Watershed Digital Elevation Model [data]()
+Next, a cross-sectional graph, longitudinal profile, and flood-prone width profile were constructed in R Studio, following [this R markdown document](). From these results, Tables 1, 2, and 3 were populated, and Rosgen Level I and Level II classifications were determined (see Tables in the Results and Discussion section).
+
+Some deviations from were observed during this study were
+
 
 
 ## Replication Results
@@ -136,7 +141,7 @@ Table 3. Rosgen Level II Classification
 
 ## Unplanned Deviations from the Protocol
 
-In order to initially install the required add-ons in GRASS on MacOS, XCode Command Line Tools had to be installed from the Apple Developers Library. More information on this issue and how to overcome may be found [here](https://github.com/GIS4DEV/RE-rosgen/issues/2). In addition, in order to open certain data it was necessary to install [The Unarchiver application](https://theunarchiver.com). 
+In order to initially install the required add-ons in GRASS on MacOS, XCode Command Line Tools had to be installed from the Apple Developers Library. More information on this issue and how to overcome may be found [here](https://github.com/GIS4DEV/RE-rosgen/issues/2). In addition, in order to open certain data it was necessary to install [The Unarchiver application](https://theunarchiver.com).
 
 ## Discussion
 
