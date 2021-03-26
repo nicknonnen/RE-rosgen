@@ -76,18 +76,22 @@ Assessment Criteria: Identify the criteria that will define whether the replicat
 >> John Day Watershed Digital Elevation Model [data]()
 
 #### Procedure
-The purpose of this study was to replicate Kasprack's analysis to determine if the methodology was reproducible and viable. Therefore, the procedure for this project follows exactly or very closely that of Kasprack's, and focuses on study sites within the John Day Watershed. This replication effort was distributed across all students in Joe Holler's spring 2021 GEOG 323 Open Source GIScience, and the analysis in this document focuses specifically on study site 25 (loc_id = 25).
+The purpose of this study was to replicate Kasprak's analysis to determine if the methodology was reproducible and viable. Therefore, the procedure for this project follows exactly or very closely that of Kasprak's, and focuses on study sites within the John Day Watershed. This replication effort was distributed across all students in Joe Holler's spring 2021 GEOG 323 Open Source GIScience, and the analysis in this document focuses specifically on study site 25 (loc_id = 25).
 
 All procedures, code, and material for this study can be found [here](https://github.com/nicknonnen/RE-rosgen), in my individual RE-Rosgen repository.
 
-Detailed procedures for the GRASS analysis may be found [here]().
-Code for R Studio analysis may be found [here](), with instructions [here]().
+Detailed procedures for the GRASS analysis may be found [here](https://github.com/nicknonnen/RE-rosgen/blob/main/docs/instruction/instructor_materials/1-Research_Protocol_GRASS.docx).
+The code for R Studio analysis may be found [here]().
 
-First, a GIS analysis of the data was conducted in GRASS. Models were used for [visualizing data]() in GRASS and [calculating centerlines]() of rivers at each study site, eliminating many steps present in the workflow directions.
+First, a GIS analysis of the data was conducted in GRASS. Models were used for [visualizing data](https://github.com/emmab725/RE-rosgen/blob/main/procedure/code/visualize.gxm) in GRASS and [calculating centerlines](https://github.com/emmab725/RE-rosgen/blob/main/procedure/code/center_line_length_no_clip.gxm) of rivers at each study site, eliminating [steps]() in section 1.3 and 2.2 respectively.
 
-Next, a cross-sectional graph, longitudinal profile, and flood-prone width profile were constructed in R Studio, following [this R markdown document](). From these results, Tables 1, 2, and 3 were populated, and Rosgen Level I and Level II classifications were determined (see Tables in the Results and Discussion section).
+Next, a cross-sectional graph, longitudinal profile, and flood-prone width profile were constructed in R Studio, following [this R markdown document](https://github.com/nicknonnen/RE-rosgen/blob/main/docs/instruction/instructor_materials/1-Research_Protocol_GRASS.docx). From these results, Tables 1, 2, and 3 were populated, and Rosgen Level I and Level II classifications were determined (see Tables in the Results and Discussion section).
 
-Some deviations from were observed during this study were
+Some deviations from Kasprak's methodology were observed during this study. Beyond using the models noted above to replace sections of workflow, slope as seen in Table 3 was recalculated. While the R Markdown file code calculated slope between every 1-meter point and then averaged that value, this study defined slope as the difference in elevation over the length of the river segment contained within the location buffer.
+
+This assessment will be deemed successful if, based on the analysis conducted and measurement calculated, the same Rosgen classification code is applied to this river system segment as in Kasprak's study.
+
+![Rosgen Classification Guide](RosgenScreenshot.png)
 
 
 
@@ -141,7 +145,7 @@ Table 3. Rosgen Level II Classification
 
 ## Unplanned Deviations from the Protocol
 
-In order to initially install the required add-ons in GRASS on MacOS, XCode Command Line Tools had to be installed from the Apple Developers Library. More information on this issue and how to overcome may be found [here](https://github.com/GIS4DEV/RE-rosgen/issues/2). In addition, in order to open certain data it was necessary to install [The Unarchiver application](https://theunarchiver.com).
+In order to initially install the required add-ons in GRASS on MacOS, XCode Command Line Tools had to be installed from the Apple Developers Library. More information on this issue and how to overcome may be found [here](https://github.com/GIS4DEV/RE-rosgen/issues/2). In addition, in order to open certain data it was necessary to install [The Unarchiver application](https://theunarchiver.com). Finally, as mentioned in the **Procedure and Data** section above, slope was recalculated as the difference in elevation over length of the river contained in the loc_id = 25 study site.
 
 ## Discussion
 
